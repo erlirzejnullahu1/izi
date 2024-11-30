@@ -1,0 +1,82 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-brand a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-brand span {
+  color: #ff6b00;
+  font-weight: bold;
+}
+
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6b00;
+}
+
+.nav-links a.active {
+  color: #ff6b00;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-login {
+  background-color: #ff6b00;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-cart {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
